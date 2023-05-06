@@ -1,0 +1,9 @@
+.city {
+	@media (any-hover: hover) {
+		&:hover {
+			img {
+				transform: scale(1.15);
+			}
+		}
+	}
+}

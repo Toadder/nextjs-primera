@@ -1,0 +1,25 @@
+@import '@src/app/styles/vars';
+
+.header {
+	background-color: rgba($primary, 0.8);
+	padding: 20px 0;
+	@media (max-width: #{$md3+px}) {
+		padding: 7.5px 0;
+		background-color: $primary;
+	}
+}
+
+.header_scrolled {
+	padding: 10px 0;
+	background-color: $primary;
+	@media (max-width: #{$md3+px}) {
+		padding: 7.5px 0;
+	}
+
+	.logo {
+		width: 110px;
+		@media (max-width: #{$md3+px}) {
+			width: 100px;
+		}
+	}
+}
