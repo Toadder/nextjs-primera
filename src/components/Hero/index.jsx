@@ -1,21 +1,20 @@
+import { slideY } from '@/src/app/styles/animations';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { slideY } from '@/src/app/styles/animations';
-import { useEffect } from 'react'
 
 export const Hero = ({ imgUrl }) => {
 	return (
-		<motion.div 
-			style={{ 
-				height: "100svh",
+		<motion.div
+			style={{
+				height: '100svh',
 			}}
-			className='relative w-screen'
+			className='relative w-screen animated'
 			variants={slideY('up')}
 			initial='hidden'
-  		whileInView='show'
-			viewport={{ once: true, }}
+			whileInView='show'
+			viewport={{ once: true }}
 		>
-			<Image priority className='object-cover' fill src={imgUrl} alt='' />
+			<Image priority className='object-cover animated' fill src={imgUrl} alt='' />
 		</motion.div>
 	);
 };
