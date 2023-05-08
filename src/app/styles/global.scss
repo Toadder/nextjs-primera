@@ -8,14 +8,6 @@ iframe:focus, input:focus {
 	outline: none;
 }
 
-html {
-	height: -webkit-fill-available;
-}
-
-body {
-	height: -webkit-fill-available;
-}
-
 .layout {
 	display: flex;
 	flex-direction: column;
