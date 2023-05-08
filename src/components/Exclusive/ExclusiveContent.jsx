@@ -15,7 +15,7 @@ const ExclusiveContent = () => {
 				>
 					<div className='lg:pr-14 lg:pt-4'>
 						<SectionTitle styles='text-primary xl:text-[55px]'>
-							Exclusive and Select Real Estate Properties in Mexcio.
+							Exclusive and Select Real Estate Properties in Mexico.
 						</SectionTitle>
 					</div>
 					<div

@@ -10,6 +10,7 @@ const HeaderLogo = () => {
 			className='md:w-full xl:max-w-[213px] md:max-w-[183px] relative z-[3] mr-auto md:mr-0'
 		>
 			<Image
+				priority
 				className={`${classes.logo} animated xl:w-[128px] w-[100px] md:w-[120px]`}
 				src='/logo.png'
 				alt=''

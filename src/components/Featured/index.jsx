@@ -38,9 +38,10 @@ const Featured = () => {
 							initial='hidden'
 							whileInView='show'
 							viewport={{ once: true }}
-							whileHover={{ y: -25, transition: { type: 'just' } }}
 						>
-							<FeaturedItem {...item} />
+							<div className='animated hover:translate-y-[-20px]'>
+								<FeaturedItem {...item} />
+							</div>
 						</motion.div>
 					))}
 				</div>
