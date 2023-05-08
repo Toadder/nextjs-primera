@@ -11,6 +11,7 @@ const Phone = ({ img, styles = '', hideText = false }) => (
 		${styles ? styles : ''}`}
 		>
 			<Image
+				priority
 				className='xl:w-[28px] xl:h-[28px] md:w-[20px] md:h-[20px] w-[23px] h-[23px]'
 				src={img}
 				alt=''

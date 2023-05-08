@@ -9,7 +9,7 @@ export const Hero = ({ imgUrl }) => {
 			style={{ 
 				height: "100svh",
 			}}
-			className='relative h-screen w-screen'
+			className='relative w-screen'
 			variants={slideY('up')}
 			initial='hidden'
   		whileInView='show'
