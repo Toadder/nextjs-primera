@@ -1,7 +1,7 @@
+import { navLinks } from '@src/constants/constants';
 import { motion } from 'framer-motion';
 import Link from 'next/link.js';
 import React from 'react';
-import { navLinks } from '@src/constants/constants';
 
 // Variants for mobile menu
 const menuVariants = {
@@ -67,7 +67,8 @@ const DesktopMenu = () => {
 	);
 };
 
-const MobileMenu = ({ isOpen }) => {
+const MobileMenu = ({ isOpen, setIsOpen }) => {
+
 	return (
 		<motion.nav
 			initial={false}
@@ -93,6 +94,7 @@ const MobileMenu = ({ isOpen }) => {
 						<Link
 							className='uppercase text-secondary inline-block font-semibold'
 							href={link.path}
+							onClick={() => setIsOpen(false)}
 						>
 							{link.name}
 						</Link>
@@ -103,9 +105,9 @@ const MobileMenu = ({ isOpen }) => {
 	);
 };
 
-const HeaderMenu = ({ type, isOpen }) => {
+const HeaderMenu = ({ type, isOpen, setIsOpen }) => {
 	if (type === 'desktop') return <DesktopMenu />;
-	return <MobileMenu isOpen={isOpen} />;
+	return <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />;
 };
 
 export default React.memo(HeaderMenu);

@@ -1,11 +1,11 @@
-import Phone from '@src/shared/Phone/Phone';
-import React from 'react';
-import phoneImg from '../../../public/icons/phone_beige.png';
+import Phone from '@src/shared/Phone/Phone'
+import React from 'react'
+import phoneImg from '../../../public/icons/phone_beige.png'
 
-import classes from './Header.module.scss';
-import HeaderBurger from './HeaderBurger';
-import HeaderLogo from './HeaderLogo';
-import HeaderMenu from './HeaderMenu.jsx';
+import classes from './Header.module.scss'
+import HeaderBurger from './HeaderBurger'
+import HeaderLogo from './HeaderLogo'
+import HeaderMenu from './HeaderMenu.jsx'
 
 const Header = () => {
 	const [isScrolled, setIsScrolled] = React.useState(false);
@@ -36,8 +36,8 @@ const Header = () => {
 				<Phone hideText={true} styles='xl:text-xl text-lg' img={phoneImg} />
 
 				{/* Mobile */}
-				<HeaderBurger isOpen={isOpen} updateIsOpen={setIsOpen} />
-				<HeaderMenu type='mobile' isOpen={isOpen} />
+				<HeaderBurger isOpen={isOpen} setIsOpen={setIsOpen} />
+				<HeaderMenu type='mobile' isOpen={isOpen} setIsOpen={setIsOpen} />
 				{/* Mobile */}
 			</div>
 		</header>

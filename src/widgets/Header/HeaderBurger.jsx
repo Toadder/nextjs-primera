@@ -1,10 +1,10 @@
 import React from 'react';
 
-const HeaderBurger = ({ isOpen, updateIsOpen }) => {
+const HeaderBurger = ({ isOpen, setIsOpen }) => {
 	return (
 		<div
 			className='md:hidden block relative w-[28px] h-[24px] relative z-[2] cursor-pointer'
-			onClick={() => updateIsOpen(prevIsOpen => !prevIsOpen)}
+			onClick={() => setIsOpen(prevIsOpen => !prevIsOpen)}
 		>
 			<div
 				className={`${isOpen ? 'rotate-45 top-[10px]' : 'top-0'}

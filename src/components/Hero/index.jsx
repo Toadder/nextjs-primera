@@ -5,7 +5,7 @@ import Image from 'next/image';
 export const Hero = ({ imgUrl }) => {
 	return (
 		<motion.div
-			className='relative xl:h-screen h-[700px] w-screen'
+			className='relative xl:h-screen md:h-[700px] h-[600px] w-screen'
 			variants={slideY('up')}
 			initial='hidden'
 			whileInView='show'
