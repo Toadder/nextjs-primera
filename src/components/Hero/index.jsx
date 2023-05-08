@@ -8,13 +8,13 @@ export const Hero = ({ imgUrl }) => {
 			style={{
 				height: '100svh',
 			}}
-			className='relative w-screen animated'
+			className='relative w-screen'
 			variants={slideY('up')}
 			initial='hidden'
 			whileInView='show'
 			viewport={{ once: true }}
 		>
-			<Image priority className='object-cover animated' fill src={imgUrl} alt='' />
+			<Image priority className='object-cover' fill src={imgUrl} alt='' />
 		</motion.div>
 	);
 };

@@ -4,10 +4,16 @@
 
 @import './vars';
 
-
-
 iframe:focus, input:focus {
 	outline: none;
+}
+
+html {
+	height: -webkit-fill-available;
+}
+
+body {
+	height: -webkit-fill-available;
 }
 
 .layout {
