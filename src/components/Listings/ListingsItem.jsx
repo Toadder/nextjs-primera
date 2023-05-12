@@ -18,7 +18,7 @@ const ListingsItem = ({ img, type, title, address, properties }) => {
 					{address}
 				</div>
 				<div className='flex flex-wrap items-center md:gap-x-5 lg:gap-y-1 gap-y-[3px] gap-x-4 md:mt-5 mt-4'>
-					{properties.map((prop) => <div className='lg:text-[20px] md:text-[18px] text-[16px] leading-tight'>{prop}</div>)}
+					{properties.map((prop, i) => <div key={i} className='lg:text-[20px] md:text-[18px] text-[16px] leading-tight'>{prop}</div>)}
 				</div>
 			</div>
 		</Link>

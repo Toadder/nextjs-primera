@@ -23,7 +23,6 @@ const Listings = () => {
 							whileInView="show"
 							viewport={{ once: true, }}
 							className='h-full'
-							key={item.id}
 						>
 							<div className='animated hover:translate-y-[-20px] h-full'>
 								<ListingsItem {...item} />
