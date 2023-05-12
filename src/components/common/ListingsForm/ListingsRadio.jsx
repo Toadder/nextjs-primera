@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DreamRadio = ({ value, isChecked, styles = '' }) => {
+const ListingsRadio = ({ value, isChecked, styles = '' }) => {
 	return (
 		<label
 			className={`
@@ -29,4 +29,4 @@ const DreamRadio = ({ value, isChecked, styles = '' }) => {
 	);
 };
 
-export default React.memo(DreamRadio);
+export default React.memo(ListingsRadio);

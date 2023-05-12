@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DreamInput = ({ placeholder }) => {
+const ListingsInput = ({ placeholder }) => {
 	return (
 		<input
 			className='lg:h-[64px] md:h-[55px] h-[50px] md:text-lg text-base text-primary placeholder:text-inherit md:px-6 px-4'
@@ -10,4 +10,4 @@ const DreamInput = ({ placeholder }) => {
 	);
 };
 
-export default React.memo(DreamInput);
+export default React.memo(ListingsInput);

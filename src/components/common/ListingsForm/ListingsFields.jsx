@@ -1,7 +1,7 @@
 import { fadeIn, slideY } from '@/src/app/styles/animations';
 import { motion } from 'framer-motion';
-import DreamRadio from './DreamRadio';
-import DreamInput from './DreamInput';
+import ListingsRadio from './ListingsRadio';
+import ListingsInput from './ListingsInput';
 import Dropdown from '@/src/shared/Dropdown/Dropdown';
 import { cities } from '@/src/constants/constants';
 import { useState } from 'react';
@@ -16,7 +16,7 @@ const radiosData = [
 	},
 ];
 
-const DreamForm = () => {
+const ListingsFields = () => {
 	const [selected, setSelected] = useState('');
 
 	return (
@@ -29,7 +29,7 @@ const DreamForm = () => {
 				className='flex flex-row items-stretch justify-center xl:gap-7 md:gap-5 gap-3'
 			>
 				{radiosData.map(data => (
-					<DreamRadio key={data.id} {...data} />
+					<ListingsRadio key={data.id} {...data} />
 				))}
 			</motion.div>
 			<motion.div
@@ -42,14 +42,14 @@ const DreamForm = () => {
 				whileInView='show'
 				viewport={{ once: true, }}
 			>
-				<DreamInput placeholder='Enter Keyword' />
+				<ListingsInput placeholder='Enter Keyword' />
 				<Dropdown
 					optionsData={cities}
 					defaultValue="City/Location"
 					selected={selected}
 					setSelected={setSelected}
 				/>
-				<DreamInput placeholder='Price/Budget' />
+				<ListingsInput placeholder='Price/Budget' />
 				<button
 					className='lg:h-[64px] md:h-[55px] h-[50px] md:text-lg text-base bg-primary text-white animated hover:opacity-80'
 					type='submit'
@@ -61,4 +61,4 @@ const DreamForm = () => {
 	);
 };
 
-export default DreamForm;
+export default ListingsFields;
