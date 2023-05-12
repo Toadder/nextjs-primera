@@ -24,7 +24,7 @@ const Listings = () => {
 							viewport={{ once: true, }}
 							className='h-full'
 						>
-							<div className='animated hover:translate-y-[-20px] h-full'>
+							<div key={item.id} className='animated hover:translate-y-[-20px] h-full'>
 								<ListingsItem {...item} />
 							</div>
 						</motion.div>
