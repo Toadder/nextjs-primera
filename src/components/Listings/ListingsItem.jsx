@@ -11,7 +11,7 @@ const ListingsItem = ({ img, type, title, address, properties }) => {
 				<div className='text-[#a5875f] lg:text-lg text-base leading-tight'>
 					{type}
 				</div>
-				<div className='lg:text-[20px] md:text-lg text-base font-semibold leading-tight lg:mt-3 mt-2'>
+				<div className='lg:text-[20px] md:text-lg text-base font-medium leading-tight lg:mt-3 mt-2'>
 					{title}
 				</div>
 				<div className='lg:text-[20px] md:text-lg text-base leading-tight lg:mt-1 mt-2'>

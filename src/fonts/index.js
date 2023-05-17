@@ -7,5 +7,5 @@ export const fontspring = localFont({
 
 export const poppins = Poppins({
 	subsets: ['latin'],
-	weight: ['300'],
+	weight: ['300', '500'],
 });

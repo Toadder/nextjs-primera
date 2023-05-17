@@ -2,6 +2,7 @@ export const constants = {
 	phoneNumber: '+52 984 228 3597',
 	email: 'primerapropertiesmx@gmail.com',
 	address: 'Plaza Palmeiras, C. 11 Sur, Ejidal, 77712 Playa del Carmen, Q.R.',
+	workingTime: "10:00 - 22:00"
 };
 
 export const navLinks = [
@@ -105,3 +106,34 @@ export const items = [
 		price: 476932,
 	},
 ];
+
+export const contacts = [
+	{
+		id: 1,
+		icon: "/contact/contacts/01.png",
+		iconSize: [19, 30],
+		title: "Plaza Palmeiras",
+		content: [
+			constants.address
+		]
+	},
+	{
+		id: 2,
+		icon: "/contact/contacts/02.png",
+		iconSize: [25, 25],
+		title: "Whats App",
+		content: [
+			<a className='animated hover:opacity-70' href={`tel:${constants.phoneNumber}`}>{constants.phoneNumber}</a>,
+			<a className='animated hover:opacity-70' href={`mailto:${constants.email}`}>{constants.email}</a>
+		]
+	},
+	{
+		id: 3,
+		icon: "/contact/contacts/03.png",
+		iconSize: [35, 35],
+		title: "Hours of Operation",
+		content: [
+			constants.workingTime
+		]
+	},
+]
