@@ -1,9 +1,8 @@
 import { items } from '@/src/constants/constants';
 import ListingsForm from '../common/ListingsForm';
-import ListingsItem from './ListingsItem';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/src/app/styles/animations';
-
+import ListingsItem from '../common/ListingsItem';
 
 const Listings = () => {
 	return (

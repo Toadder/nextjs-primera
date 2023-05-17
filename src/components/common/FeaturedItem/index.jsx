@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const FeaturedItem = ({ img, city, price, title }) => {
+const FeaturedItem = ({ id, img, city, price, title }) => {
 	return (
-		<Link href=''>
+		<Link href={`/listings/${id}`}>
 			<div className='max-w-full'>
 				<Image className='object-cover w-full' src={img} width={501} height={312} alt='' />
 			</div>
