@@ -123,8 +123,8 @@ export const contacts = [
 		iconSize: [25, 25],
 		title: "Whats App",
 		content: [
-			<a className='animated hover:opacity-70' href={`tel:${constants.phoneNumber}`}>{constants.phoneNumber}</a>,
-			<a className='animated hover:opacity-70' href={`mailto:${constants.email}`}>{constants.email}</a>
+			<a key={constants.phoneNumber} className='animated hover:opacity-70' href={`tel:${constants.phoneNumber}`}>{constants.phoneNumber}</a>,
+			<a key={constants.email} className='animated hover:opacity-70' href={`mailto:${constants.email}`}>{constants.email}</a>
 		]
 	},
 	{
