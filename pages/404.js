@@ -22,7 +22,7 @@ const Error = () => {
 						404
 					</div>
 					<div className='md:mt-1 mt-2 lg:text-[23px] md:text-[21px] text-[17px]'>
-						The page you are looking for can't be found...
+						The page you are looking for can&apos;t be found...
 					</div>
 				</motion.div>
 			</div>
