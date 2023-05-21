@@ -1,6 +1,6 @@
-import Head from 'next/head';
+import { fadeIn } from '@/src/app/styles/animations';
 import { motion } from 'framer-motion';
-import { fadeIn } from '@/src/app/styles/animations'
+import Head from 'next/head';
 
 const Error = () => {
 	return (
@@ -9,16 +9,13 @@ const Error = () => {
 				<title>Page not found</title>
 			</Head>
 			<div
-				className='
-					xl:h-screen md:h-[700px] h-[600px] w-screen bg-primary text-white
-						flex flex-col items-center justify-center text-center
-			'
+				className='xl:h-screen md:h-[700px] h-[600px] w-screen bg-primary text-white flex flex-col items-center justify-center text-center'
 			>
 				<motion.div
 					variants={fadeIn()}
 					initial='hidden'
 					whileInView='show'
-					viewport={{ once: true, }}
+					viewport={{ once: true }}
 					className='container'
 				>
 					<div className='font-medium lg:text-[100px] md:text-[80px] text-[50px] leading-tight'>
