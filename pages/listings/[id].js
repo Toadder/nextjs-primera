@@ -1,14 +1,13 @@
-import { useRouter } from 'next/router';
-import { items } from '@/src/constants/constants';
+import PropertyPage from '@/src/pages/PropertyPage';
+import Head from 'next/head';
 
-const Item = () => {
-	const router = useRouter();
-	const { id } = router.query;
-	console.log(id);
+const Property = () => (
+	<>
+		<Head>
+			<title>Primera | Property</title>
+		</Head>
+		<PropertyPage />
+	</>
+);
 
-	return (
-		<div>{id}</div>
-	)
-}
-
-export default Item
+export default Property;

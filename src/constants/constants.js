@@ -44,74 +44,14 @@ export const cities = [
 	},
 ];
 
-export const items = [
-	{
-		id: 1,
-		img: '/items/01.jpg',
-		city: 'Playa Del Carmen',
-		type: 'Condo',
-		title: 'The Village 2 Bedroom Condo',
-		address: '22-05 Astoria, Tulum, Mexico',
-		properties: ['Beds: 2', 'Bath: 2', 'Sq Feet: 1,200'],
-		price: 476932,
-	},
-	{
-		id: 2,
-		img: '/items/02.jpg',
-		city: 'Playa Del Carmen',
-		type: 'Condo',
-		title: 'The Village 2 Bedroom Condo',
-		address: '22-05 Astoria, Tulum, Mexico',
-		properties: ['Beds: 2', 'Bath: 2', 'Sq Feet: 1,200'],
-		price: 476932,
-	},
-	{
-		id: 3,
-		img: '/items/03.jpg',
-		city: 'Playa Del Carmen',
-		type: 'House',
-		title: 'The Village 2 Bedroom Condo',
-		address: '22-05 Astoria, Tulum, Mexico',
-		properties: ['Beds: 2', 'Bath: 2', 'Sq Feet: 1,200'],
-		price: 476932,
-	},
-	{
-		id: 4,
-		img: '/items/04.jpg',
-		city: 'Playa Del Carmen',
-		type: 'Condo',
-		title: 'The Village 2 Bedroom Condo',
-		address: '22-05 Astoria, Tulum, Mexico',
-		properties: ['Beds: 2', 'Bath: 2', 'Sq Feet: 1,200'],
-		price: 476932,
-	},
-	{
-		id: 5,
-		img: '/items/05.jpg',
-		city: 'Playa Del Carmen',
-		type: 'Condo',
-		title: 'The Village 2 Bedroom Condo',
-		address: '22-05 Astoria, Tulum, Mexico',
-		properties: ['Beds: 2', 'Bath: 2', 'Sq Feet: 1,200'],
-		price: 476932,
-	},
-	{
-		id: 6,
-		img: '/items/06.jpg',
-		city: 'Playa Del Carmen',
-		type: 'House',
-		title: 'The Village 2 Bedroom Condo',
-		address: '22-05 Astoria, Tulum, Mexico',
-		properties: ['Beds: 2', 'Bath: 2', 'Sq Feet: 1,200'],
-		price: 476932,
-	},
-];
-
 export const contacts = [
 	{
 		id: 1,
 		icon: "/contact/contacts/01.png",
-		iconSize: [19, 30],
+		iconSize: {
+			width: 19, 
+			height: 30,
+		},
 		title: "Plaza Palmeiras",
 		content: [
 			constants.address
@@ -120,7 +60,10 @@ export const contacts = [
 	{
 		id: 2,
 		icon: "/contact/contacts/02.png",
-		iconSize: [25, 25],
+		iconSize: {
+			width: 25,
+			height: 25,
+		},
 		title: "Whats App",
 		content: [
 			<a key={constants.phoneNumber} className='animated hover:opacity-70' href={`tel:${constants.phoneNumber}`}>{constants.phoneNumber}</a>,
@@ -130,7 +73,10 @@ export const contacts = [
 	{
 		id: 3,
 		icon: "/contact/contacts/03.png",
-		iconSize: [35, 35],
+		iconSize: {
+			width: 35, 
+			height: 35,
+		},
 		title: "Hours of Operation",
 		content: [
 			constants.workingTime

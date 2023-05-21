@@ -1,18 +1,17 @@
-import React from 'react'
-import Hero from '../components/Hero'
-import Contacts from '../components/Contacts'
-import Map from '../components/common/Map'
-import ContactForm from '../components/ContactForm'
+import ContactForm from '../components/ContactForm';
+import Contacts from '../components/Contacts';
+import Hero from '../components/Hero';
+import MapSection from '../components/MapSection';
 
 const ContactPage = () => {
 	return (
 		<>
-			<Hero imgUrl="/contact/hero/01.jpg" />
+			<Hero imgUrl='/contact/hero/01.jpg' />
 			<Contacts />
-			<Map />
+			<MapSection />
 			<ContactForm />
 		</>
-	)
-}
+	);
+};
 
-export default ContactPage
+export default ContactPage;

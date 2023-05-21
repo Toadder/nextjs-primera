@@ -4,7 +4,7 @@
 
 @import './vars';
 
-iframe:focus, input:focus {
+iframe:focus, input:focus, textarea:focus {
 	outline: none;
 }
 

@@ -1,5 +1,4 @@
 import { fadeIn, slideY } from '@/src/app/styles/animations';
-import { items } from '@/src/constants/constants';
 import SectionSubtitle from '@/src/shared/SectionSubtitle/SectionSubtitle';
 import SectionTitle from '@/src/shared/SectionTitle/SectionTitle';
 import { motion } from 'framer-motion';
@@ -31,16 +30,16 @@ const Featured = () => {
 					</SectionTitle>
 				</motion.div>
 				<div className='grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-x-7 gap-x-6 lg:gap-y-12 md:gap-y-8 gap-y-6 lg:mt-10 md:mt-8 mt-5'>
-					{items.map(item => (
+					{Array(6).fill('').map((_, index) => (
 						<motion.div
-							key={item.id}
+							key={index}
 							variants={fadeIn()}
 							initial='hidden'
 							whileInView='show'
 							viewport={{ once: true }}
 						>
 							<div className='animated hover:translate-y-[-20px]'>
-								<FeaturedItem {...item} />
+								<FeaturedItem />
 							</div>
 						</motion.div>
 					))}
